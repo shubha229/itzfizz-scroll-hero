@@ -74,7 +74,7 @@ export default function Home() {
           style={{ backgroundImage: "url('curtainRed.png')" }}
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center translate-y-12 md:translate-y-16 gap-8 text-center px-6 z-10 translate-y-16 md:translate-y-20 ">
-          <div ref={cubeRef} className="absolute w-[350px] md:w-[450px] h-[350px] md:h-[450px]">
+          <div ref={cubeRef} className="absolute -translate-y-10 md:translate-y-0 w-[260px] md:w-[450px] h-[260px] md:h-[450px]">
             <Image
               src="hero-object.png"
               alt="cube"
@@ -88,7 +88,7 @@ export default function Home() {
             className="text-7xl md:text-7xl lg:text-7xl font-bold flex flex-col lg:flex-row items-center lg:gap-20 gap-6 translate-y-10 md:gap-20 "
           >
             {headline.map((word, index) => (
-              <span key={index} className="tracking-[0.6em]">
+              <span key={index} className="tracking-[0.15em] font-semibold md:tracking-[0.6em]">
                 {word.split("").map((letter, i) => (
                   <span key={i} className="inline-block">
                     {letter}
