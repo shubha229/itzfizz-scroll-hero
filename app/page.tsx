@@ -66,17 +66,17 @@ export default function Home() {
       <section ref={sectionRef} className="relative h-screen">        <div
           ref={leftCurtainRef}
           className="absolute inset-y-0 left-0 w-1/2 bg-cover bg-left z-30"
-          style={{ backgroundImage: "url('/curtainRed.png')" }}
+          style={{ backgroundImage: "url('curtainRed.png')" }}
         />
         <div
           ref={rightCurtainRef}
           className="absolute inset-y-0 right-0 w-1/2 bg-cover bg-right z-30"
-          style={{ backgroundImage: "url('/curtainRed.png')" }}
+          style={{ backgroundImage: "url('curtainRed.png')" }}
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center translate-y-12 md:translate-y-16 gap-8 text-center px-6 z-10 translate-y-16 md:translate-y-20 ">
           <div ref={cubeRef} className="absolute w-[350px] md:w-[450px] h-[350px] md:h-[450px]">
             <Image
-              src="/hero-object.png"
+              src="hero-object.png"
               alt="cube"
               width={450}
               height={450}
